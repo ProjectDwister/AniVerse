@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://projectdwister.github.io/AniVerse/sitemap.xml
