@@ -1,0 +1,22 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import './index.css'
+import App from './App.jsx'
+import StoryPage from './components/StoryPage.jsx'
+import ArchivePage from './components/ArchivePage.jsx'
+import { ThemeProvider } from './ThemeContext.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <ThemeProvider>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/essays" element={<ArchivePage />} />
+          <Route path="/story/:slug" element={<StoryPage />} />
+        </Routes>
+      </HashRouter>
+    </ThemeProvider>
+  </StrictMode>,
+)
