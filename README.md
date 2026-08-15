@@ -1,4 +1,4 @@
-# The Margin
+# The AniVerse
 
 An editorial-style blog built with React + Vite.
 
